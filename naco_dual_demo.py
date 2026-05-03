@@ -63,7 +63,7 @@ if st.button("Show Alignment", type="primary", key="main_alignment"):
         with result_container.container():
             st.warning("Please provide both testimonies.")
     else:
-        result = bridge.run_dual_analysis(founder_text, investor_text)
+        result = bridge.run_dual_analysis(candidate_text, role_text)
         
         with result_container.container():
             st.success(f"**Shared Coherence Score: {result['score']}%**")
