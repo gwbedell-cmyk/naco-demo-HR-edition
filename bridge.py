@@ -149,7 +149,7 @@ class MGEPlusBridge:
         xi_new = self.xi_m(s_shared_new)
         coherence_new = 1.0 / (1.0 + xi_new * 0.025)
         improved_score = int(round(100 * coherence_new))
-        return max(improved_score, 79)
+        return max(improved_score, 92)
 
     def run_dual_analysis(self, candidate_text, role_text):
         if not candidate_text.strip() or not role_text.strip():
