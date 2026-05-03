@@ -148,10 +148,7 @@ class MGEPlusBridge:
         s_shared_new = s_shared_new / (np.sum(s_shared_new) + 1e-12)
         xi_new = self.xi_m(s_shared_new)
         coherence_new = 1.0 / (1.0 + xi_new * 0.025)
-        improved = int(round(100 * coherence_new))
-        base = self.compute_dual_coherence(
-            "placeholder candidate", "placeholder role"
-        )["score"]
+        improved_score = int(round(100 * coherence_new))
         return max(improved_score, 79)
 
     def run_dual_analysis(self, candidate_text, role_text):
