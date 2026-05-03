@@ -26,10 +26,9 @@ with col1:
     st.image("intentics_logo3.jpg", width=400)
 with col2:
     st.markdown("## powered by TEF & MGE+")
-    st.markdown("### Real Moral Geometry • Candidate Role Alignment")
-
+    
+st.markdown("### Real Moral Geometry • Candidate Role Alignment")
 st.markdown("**See how aligned two testimonies are — and what it would take to close the gap.**")
-st.markdown("---")
 
 # Input columns
 col_f, col_i = st.columns(2)
@@ -37,7 +36,7 @@ col_f, col_i = st.columns(2)
 with col_f:
     st.markdown("### Candidate Testimony")
     founder_text = st.text_area(
-        "Founder Testimony",
+        "Candidate Testimony",
         placeholder="Describe the person you are, what drives you, and what kind of work environment brings out the best in you...",
         height=220,
         key="founder_input"
@@ -46,7 +45,7 @@ with col_f:
 with col_i:
     st.markdown("### Role & Team Testimony")
     investor_text = st.text_area(
-        "Investor Testimony",
+        "Role Testimony",
         placeholder="Describe the role, the team, and the qualities that would make someone truly excel in this position...",
         height=220,
         key="investor_input"
