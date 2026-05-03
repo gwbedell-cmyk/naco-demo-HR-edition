@@ -35,7 +35,7 @@ col_f, col_i = st.columns(2)
 
 with col_f:
     st.markdown("### Candidate Testimony")
-    founder_text = st.text_area(
+    candidate_text = st.text_area(
         "Candidate Testimony",
         placeholder="Describe the person you are, what drives you, and what kind of work environment brings out the best in you...",
         height=220,
@@ -44,7 +44,7 @@ with col_f:
 
 with col_i:
     st.markdown("### Role & Team Testimony")
-    investor_text = st.text_area(
+    role_text = st.text_area(
         "Role Testimony",
         placeholder="Describe the role, the team, and the qualities that would make someone truly excel in this position...",
         height=220,
@@ -59,7 +59,7 @@ result_container = st.empty()
 
 # Single Show Alignment button
 if st.button("Show Alignment", type="primary", key="main_alignment"):
-    if not founder_text.strip() or not investor_text.strip():
+    if not candidate_text.strip() or not role_text.strip():
         with result_container.container():
             st.warning("Please provide both testimonies.")
     else:
