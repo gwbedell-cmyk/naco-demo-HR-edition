@@ -23,7 +23,7 @@ st.markdown("""
 # Header
 col1, col2 = st.columns([2, 5])
 with col1:
-    st.image("intentics_logo4.jpg", width=400)
+    st.image("intentics_logo3.jpg", width=400)
 with col2:
     st.markdown("## powered by TEF & MGE+")
     st.markdown("### Real Moral Geometry • Candidate Role Alignment")
